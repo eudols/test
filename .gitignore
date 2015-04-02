@@ -1,7 +1,3 @@
-#ignore files without extension
-*
-!*.*
-
 # Object files
 *.o
 *.ko

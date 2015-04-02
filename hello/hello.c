@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <string.h>
 
+/* Thread experiment */
+
 void * myfirstthread(void *arg);
 void * mysecondthread(void *arg);
 

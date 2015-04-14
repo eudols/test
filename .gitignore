@@ -33,3 +33,10 @@
 
 # emacs backup files
 *~
+
+# individual files
+hello/hello
+segf/segf
+stack/core
+stack/stack
+strings/strings

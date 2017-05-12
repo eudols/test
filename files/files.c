@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct {
@@ -27,6 +27,7 @@ int main(int argc, char *argv[]) {
     return (EXIT_FAILURE);
   }
   fread(&mint2, sizeof(myint), 1, fp);
+  printf("x=%d  y=%d\n", mint2.x, mint2.y);
   fclose(fp);
 
   return (EXIT_SUCCESS);

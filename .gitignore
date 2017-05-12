@@ -40,3 +40,5 @@ segf/segf
 stack/core
 stack/stack
 strings/strings
+files/files
+files/myfile

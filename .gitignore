@@ -36,6 +36,7 @@
 
 # individual files
 hello/hello
+qsort/qsort
 segf/segf
 stack/core
 stack/stack

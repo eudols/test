@@ -35,6 +35,7 @@
 *~
 
 # individual files
+ctut/ctut
 hello/hello
 qsort/qsort
 segf/segf

@@ -1,15 +1,14 @@
-#include <stdio.h>
 #include <pthread.h>
-#include <unistd.h>
+#include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 /* Thread experiment */
 
-void * myfirstthread(void *arg);
-void * mysecondthread(void *arg);
+void *myfirstthread(void *arg);
+void *mysecondthread(void *arg);
 
-int main(int argc, char argv[]) 
-{
+int main(int argc, char *argv[]) {
   int *myint;
   int otherint;
   int err;
@@ -38,10 +37,10 @@ int main(int argc, char argv[])
   printf("mythread1 has exited\n");
   pthread_join(mythread2, NULL);
   printf("mythread2 has exited\n");
+  return 0;
 }
 
-void * myfirstthread(void * arg)
-{
+void *myfirstthread(void *arg) {
   int *threadint;
   threadint = (int *)arg;
   printf("This thread is myfirstthread%d\n", *threadint);
@@ -51,10 +50,9 @@ void * myfirstthread(void * arg)
   sleep(60);
 }
 
-void * mysecondthread(void * arg)
-{
+void *mysecondthread(void *arg) {
   int *threadint;
   threadint = (int *)arg;
   printf("This thread is mysecondthread%d\n", *threadint);
+  return NULL;
 }
-

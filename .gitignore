@@ -35,9 +35,8 @@
 *~
 
 # individual files
-ctut/ctut
+bitwise/bitwise
 hello/hello
-qsort/qsort
 segf/segf
 stack/core
 stack/stack
